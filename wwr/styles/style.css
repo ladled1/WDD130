@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -5,21 +6,29 @@
 nav a {
     text-align: center;
   }
-  
   #hero-msg h1, #hero-msg h4 {
     text-align: center;
   }
   .button-box {
     text-align: center;
   }
-  .home-title {
-    color: black
+  #logo_link {
+    padding-top: 5px;
   }
+  .home-title {
+    color: black;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
   h4 {
     color: Black;
   }
   main section {
     text-align: center;
+  }
+  main section img {
+    box-sizing: border-box;
   }
   
 #background {
@@ -28,6 +37,13 @@ nav a {
 }
 body {
     background-color: #fcfbfb;
+    font-family: 'Bradley Hand', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color:rgba(20,30,13, .7);
@@ -44,22 +60,36 @@ nav a:hover {
     background-color: rgba(20,30,13, .7);
     color: #d9c2a3;
     text-decoration: yellow;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
-    background-color: rgba(20,30,13, .7)
+    background-color: rgba(20,30,13, .7);
 }
 .msg {
     background-color: rgba(20,30,13, .7);
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: yellow;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
 }
 .msg p {
     color: yellow;
+    font-size: 2em;
+    padding-bottom: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 footer {
     background-color: rgba(20,30,13, .7);
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: #d9c2a3;
@@ -70,11 +100,13 @@ footer a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 nav a{
     text-align: center;
     color: #d9c2a3;
     text-decoration: yellow;
+    padding: 35px;
 }
 footer p {
     font-size: 1.2em;
@@ -82,4 +114,10 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
-/* you are on question 13. remember you only did a portion of some of these questions for instance on question 13 you only didthe first one. you need to now hadd nav a and .home-title and h4 and all those other ones.*/
+footer .social img {
+    padding-top:15px;
+}
+.card-img {
+    border: 10px solid #d9c2a3
+}
+/* you finished for this week 2/3/2025 but you still need to submit the project*/
