@@ -1,0 +1,19 @@
+footer {
+    background-color: grey;
+}
+.circles {
+    width: 100%;
+}
+.image-container {
+    display: flex; /* Align images side by side */
+    gap: 10px; /* Add spacing between images */
+    justify-content: center; /* Center images horizontally */
+}
+
+.image-container img {
+    width: 100px; /* Set image size */
+    height: 100px;
+    border-radius: 50%; /* Make images circular */
+    object-fit: cover; /* Ensure images cover the circle */
+    border: 2px solid #000; /* Optional: Add border */
+}
