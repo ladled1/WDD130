@@ -1,5 +1,6 @@
 footer {
     background-color: grey;
+    height: 300px;
 }
 .circles {
     width: 100%;
@@ -11,9 +12,10 @@ footer {
 }
 
 .image-container img {
-    width: 100px; /* Set image size */
-    height: 100px;
+    width: 200px; /* Set image size */
+    height: 200px;
     border-radius: 50%; /* Make images circular */
     object-fit: cover; /* Ensure images cover the circle */
-    border: 2px solid #000; /* Optional: Add border */
+    border: 20px solid #000; /* Optional: Add border */
+    margin: 30px 30px;
 }
