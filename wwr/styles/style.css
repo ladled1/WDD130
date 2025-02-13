@@ -56,6 +56,8 @@ h2 {
 }
 header {
     background-color:rgba(20,30,13, .7);
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 nav a:hover {
     background-color: black;
@@ -127,4 +129,4 @@ footer .social img {
 .card-img {
     border: 10px solid #d9c2a3
 }
-/* you finished for this week 2/3/2025 but you still need to submit the project*/
+/* you are on 01 */
