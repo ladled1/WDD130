@@ -16,6 +16,7 @@ body {
 
 h2 {
     margin: 0;
+    text-align: center;
 }
 
 /* Header Styles */
@@ -330,7 +331,7 @@ footer .social img {
     }
     
     #background {
-        display: block;
+        display: auto;
     }
     
     .mountains, .msg {
