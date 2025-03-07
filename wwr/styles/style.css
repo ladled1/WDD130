@@ -330,7 +330,7 @@ footer .social img {
     }
     
     #background {
-        display: auto;
+        display: block;
     }
     
     .mountains, .msg {
