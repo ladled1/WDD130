@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header {
+            background: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 10px 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .btn {
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 70%;
+            margin: auto;
+        }
+        .box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .bottom-boxes {
+            display: flex;
+            justify-content: space-between;
+            max-width: 70%;
+            margin: 30px auto;
+            gap: 20px;
+        }
+        .bottom-box {
+            flex: 1;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            background: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="site-plan.html">Site-Plan</a></li>
+            </ul>
+        </nav>
+        <button class="btn">Button</button>
+    </header>
+    
+    <div class="main-content">
+        <div class="box">
+            <h2>RESUME</h2>
+            <p>Insert your resume details here.</p>
+        </div>
+        <div class="box">
+            <h2>EXPERIENCE</h2>
+            <p>Describe your work experience here.</p>
+        </div>
+    </div>
+    
+    <div class="bottom-boxes">
+        <div class="bottom-box">
+            <h2>CERTIFICATIONS</h2>
+            <p>List your certifications here.</p>
+        </div>
+        <div class="bottom-box">
+            <h2>SKILLS</h2>
+            <p>Highlight your skills here.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-left">Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="site-plan.html">Site-Plan</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <span><img src="images/facebook.png" alt=""></span> <span><img src="images/instagram.png" alt="Instagram"></i></span> <span><img src="images/twitter.png" alt="X"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
