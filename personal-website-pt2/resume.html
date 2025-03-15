@@ -17,46 +17,54 @@
         }
         .container {
             width: 90%;
+            max-width: 1200px;
             margin: auto;
-            padding: 20px 0;
-            text-align: center;
+            padding: 0 15px;
         }
+        
+        /* Header styles - updated to match previous code */
         header {
             background: #fff;
-            padding: 20px;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header-content {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        nav ul {
-            list-style: none;
-            display: flex;
-            padding: 10px 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black;
+        .logo {
+            font-size: 20px;
             font-weight: bold;
         }
-        .btn {
-            background: black;
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        .button {
+            background: #333;
             color: white;
-            padding: 10px 20px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
-            margin-top: 10px;
         }
+        
+        /* Resume page specific styles */
         .main-content {
             display: grid;
             grid-template-columns: 1fr;
             gap: 30px;
             max-width: 70%;
-            margin: auto;
+            margin: 40px auto;
         }
         .box {
             background: #fff;
@@ -80,27 +88,65 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             text-align: center;
         }
+        
+        /* Footer - updated to match previous code */
         footer {
-            background: #fff;
-            padding: 20px 0;
-            text-align: center;
+            background: white;
+            padding: 30px 0;
+            border-top: 1px solid #e0e0e0;
             margin-top: 40px;
-            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .footer-links {
+            display: flex;
+            list-style: none;
+        }
+        .footer-links li {
+            margin-right: 20px;
+        }
+        .footer-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        .social-icons {
+            display: flex;
+        }
+        .social-icons a {
+            margin-left: 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        .copyright {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Logo</div>
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Homepage</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="site-plan.html">Site-Plan</a></li>
-            </ul>
-        </nav>
-        <button class="btn">Button</button>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Logo</div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="homepage.html">Homepage</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="site-plan.html">Site-Plan</a></li>
+                    </ul>
+                </nav>
+                <button class="button">Button</button>
+            </div>
+        </div>
     </header>
     
     <div class="main-content">
@@ -127,14 +173,22 @@
     
     <footer>
         <div class="container">
-            <div class="footer-left">Logo</div>
-            <nav>
-                <ul>
+            <div class="footer-content">
+                <div class="logo">Logo</div>
+                <ul class="footer-links">
+                    <li><a href="homepage.html">Homepage</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
                     <li><a href="site-plan.html">Site-Plan</a></li>
                 </ul>
-            </nav>
-            <div class="social-icons">
-                <span><img src="images/facebook.png" alt=""></span> <span><img src="images/instagram.png" alt="Instagram"></i></span> <span><img src="images/twitter.png" alt="X"></span>
+                <div class="social-icons">
+                    <a href="images/instagram.png" aria-label="Instagram"><img src="images/instagram.png" alt=""></a>
+                    <a href="images/facebook.png" aria-label="Facebook"><img src="images/facebook.png" alt=""></a>
+                    <a href="images/twitter.png" aria-label="Twitter"><img src="images/twitter.png" alt=""></a>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2024 Your Website. All rights reserved. | Privacy Policy | Terms of Service
             </div>
         </div>
     </footer>
