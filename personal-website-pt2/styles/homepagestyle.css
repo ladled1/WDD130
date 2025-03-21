@@ -76,13 +76,7 @@ img {
   background-color: var(--accent1-color);
 }
 
-/* Layout Components */
-.section {
-  padding: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
-}
-
-/* Header Styles */
+/* Header Styles - Unchanged */
 header {
   background-color: var(--secondary-color);
   padding: var(--spacing-lg);
@@ -95,7 +89,7 @@ header {
   width: 100px;
 }
 
-/* Navigation */
+/* Navigation - Unchanged */
 nav {
   display: flex;
   gap: var(--spacing-lg);
@@ -113,75 +107,88 @@ nav a:hover {
   color: white;
 }
 
-/* Main Content Sections */
-.tagline {
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: var(--spacing-sm);
-  font-style: italic;
+/* New Hero Banner Style */
+.hero-banner {
+  position: relative;
+  height: 400px;
+  background-color: #e0e0e0;
+  overflow: hidden;
+  margin-bottom: var(--spacing-xl);
 }
 
-.hero {
-  background-color: var(--accent1-color);
-  padding: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
-  text-align: center;
-}
-
-.hero img {
-  width: 300px;
-  margin: 0 auto var(--spacing-lg);
-}
-
-.hero-msg h1 {
-  font-size: 2em;
-  color: white;
-}
-
-.hero-msg h2 {
-  color: var(--accent2-color);
-}
-
-.about-section {
-  background-color: white;
-  padding: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
-}
-
-.about-section img {
+.hero-banner img {
   width: 100%;
-  margin-top: var(--spacing-lg);
+  height: 100%;
+  object-fit: cover;
 }
 
-/* FAQ Section */
-.faq-section {
-  background-color: var(--accent2-color);
-  padding: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
-}
-
-.faq-section h2 {
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  margin-bottom: var(--spacing-lg);
+  color: white;
+  background-color: rgba(27, 58, 43, 0.7);
+  padding: var(--spacing-xl);
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
 }
 
-.faq-item {
-  background-color: white;
-  padding: var(--spacing-md);
+.hero-overlay h1 {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-overlay h2 {
+  color: var(--accent2-color);
   margin-bottom: var(--spacing-md);
 }
 
-.faq-item h3 {
-  color: var(--accent1-color);
+.hero-overlay p {
+  font-style: italic;
+  margin-bottom: 0;
 }
 
-/* Call to Action */
+/* New FAQ Section Style */
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-xl);
+  background-color: white;
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.faq-intro h2 {
+  font-size: 2em;
+  margin-bottom: var(--spacing-md);
+}
+
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.faq-item {
+  background-color: var(--accent2-color);
+  padding: var(--spacing-lg);
+  border-radius: 5px;
+}
+
+.faq-item h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Call to Action - Unchanged */
 .cta {
   background-color: var(--secondary-color);
   padding: var(--spacing-xl);
   text-align: center;
-  margin-top: var(--spacing-xxl);
   margin-bottom: var(--spacing-lg);
   border-radius: 5px;
 }
@@ -192,7 +199,7 @@ nav a:hover {
   font-size: 1.2em;
 }
 
-/* Footer Styles */
+/* Footer Styles - Unchanged */
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -258,5 +265,18 @@ footer {
   
   nav {
     margin: var(--spacing-md) 0;
+  }
+  
+  .faq-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-overlay {
+    width: 90%;
+    padding: var(--spacing-lg);
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2em;
   }
 }
