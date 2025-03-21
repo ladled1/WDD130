@@ -1,4 +1,4 @@
-/* Importing Google Fonts - combining the two imports */
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
 /* CSS Reset */
@@ -20,13 +20,6 @@
   /* Fonts */
   --heading-font: "IM Fell French Canon SC", sans-serif;
   --paragraph-font: "Lato", Helvetica, sans-serif;
-  
-  /* Spacing */
-  --spacing-sm: 10px;
-  --spacing-md: 15px;
-  --spacing-lg: 20px;
-  --spacing-xl: 30px;
-  --spacing-xxl: 40px;
 }
 
 /* General Styles */
@@ -41,15 +34,14 @@ body {
   margin: 0 auto;
 }
 
-/* Typography */
 h1, h2, h3 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 15px;
 }
 
 p {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 15px;
   line-height: 1.5;
 }
 
@@ -61,15 +53,14 @@ img {
   max-width: 100%;
 }
 
-/* Component Styles */
+/* Button style */
 .cta-button {
   display: inline-block;
   background-color: var(--primary-color);
   color: white;
-  padding: var(--spacing-sm) var(--spacing-xl);
+  padding: 10px 30px;
   font-weight: bold;
   border-radius: 5px;
-  transition: background-color 0.3s;
 }
 
 .cta-button:hover {
@@ -79,7 +70,7 @@ img {
 /* Header Styles - Unchanged */
 header {
   background-color: var(--secondary-color);
-  padding: var(--spacing-lg);
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,17 +80,15 @@ header {
   width: 100px;
 }
 
-/* Navigation - Unchanged */
 nav {
   display: flex;
-  gap: var(--spacing-lg);
+  gap: 20px;
 }
 
 nav a {
   color: var(--primary-color);
   font-weight: bold;
-  padding: 5px var(--spacing-sm);
-  transition: all 0.3s;
+  padding: 5px 10px;
 }
 
 nav a:hover {
@@ -107,95 +96,71 @@ nav a:hover {
   color: white;
 }
 
-/* New Hero Banner Style */
+/* Hero Banner */
 .hero-banner {
-  position: relative;
-  height: 400px;
   background-color: #e0e0e0;
-  overflow: hidden;
-  margin-bottom: var(--spacing-xl);
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .hero-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 300px;
+  margin-bottom: 20px;
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  background-color: rgba(27, 58, 43, 0.7);
-  padding: var(--spacing-xl);
-  border-radius: 5px;
-  width: 80%;
-  max-width: 600px;
-}
-
-.hero-overlay h1 {
-  font-size: 2.5em;
-  color: white;
-  margin-bottom: var(--spacing-sm);
-}
-
-.hero-overlay h2 {
-  color: var(--accent2-color);
-  margin-bottom: var(--spacing-md);
-}
-
-.hero-overlay p {
-  font-style: italic;
-  margin-bottom: 0;
-}
-
-/* New FAQ Section Style */
-.faq-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: var(--spacing-xl);
-  background-color: white;
-  padding: var(--spacing-xl);
-  margin-bottom: var(--spacing-xl);
-}
-
-.faq-intro h2 {
+.hero-text h1 {
   font-size: 2em;
-  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
 }
 
-.faq-questions {
+.hero-text h2 {
+  color: var(--accent1-color);
+}
+
+.hero-text p {
+  font-style: italic;
+}
+
+/* FAQ Section */
+.faq-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing-lg);
+  flex-direction: row;
+}
+
+.faq-left {
+  width: 30%;
+  padding-right: 20px;
+}
+
+.faq-right {
+  width: 70%;
 }
 
 .faq-item {
   background-color: var(--accent2-color);
-  padding: var(--spacing-lg);
-  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
 }
 
 .faq-item h3 {
   color: var(--primary-color);
-  margin-bottom: var(--spacing-sm);
 }
 
-/* Call to Action - Unchanged */
+/* Call to Action */
 .cta {
   background-color: var(--secondary-color);
-  padding: var(--spacing-xl);
+  padding: 30px;
   text-align: center;
-  margin-bottom: var(--spacing-lg);
-  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .cta p {
   color: var(--primary-color);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 15px;
   font-size: 1.2em;
 }
 
@@ -203,26 +168,23 @@ nav a:hover {
 footer {
   background-color: var(--primary-color);
   color: white;
-  padding: var(--spacing-xxl) var(--spacing-lg) var(--spacing-lg);
+  padding: 40px 20px 20px;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: 30px;
 }
 
 .footer-logo img {
   width: 80px;
 }
 
-.footer-links, .social-icons {
-  display: flex;
-}
-
 .footer-links {
-  gap: var(--spacing-lg);
+  display: flex;
+  gap: 20px;
 }
 
 .footer-links a {
@@ -230,7 +192,8 @@ footer {
 }
 
 .social-icons {
-  gap: var(--spacing-md);
+  display: flex;
+  gap: 15px;
 }
 
 .social-icons img {
@@ -241,42 +204,41 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: var(--spacing-lg);
+  padding-top: 20px;
   border-top: 1px solid var(--accent2-color);
   font-size: 14px;
 }
 
 .footer-legal {
   display: flex;
-  gap: var(--spacing-lg);
+  gap: 20px;
 }
 
 .footer-legal a {
   color: var(--accent2-color);
 }
 
-/* Responsive Design */
+/* Simple Mobile Responsive */
 @media screen and (max-width: 768px) {
   header, .footer-top, .footer-bottom {
     flex-direction: column;
     text-align: center;
-    gap: var(--spacing-md);
   }
   
   nav {
-    margin: var(--spacing-md) 0;
+    margin: 15px 0;
   }
   
-  .faq-container {
-    grid-template-columns: 1fr;
+  .faq-section {
+    flex-direction: column;
   }
   
-  .hero-overlay {
-    width: 90%;
-    padding: var(--spacing-lg);
+  .faq-left, .faq-right {
+    width: 100%;
   }
   
-  .hero-overlay h1 {
-    font-size: 2em;
+  .faq-left {
+    margin-bottom: 20px;
+    padding-right: 0;
   }
 }
