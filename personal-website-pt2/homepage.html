@@ -3,58 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Don's Portfolio</title>
     <link rel="stylesheet" href="styles/homepagestyle.css">
-
-
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">Logo</div>
+    <div id="content">
+        <header>
+            <div class="logo-box">
+                <img src="images/logo.jpg" alt="Don's Logo">
+            </div>
             <nav>
-                <ul>
-                    <li><a href="homepage.html">Homepage</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="site-plan.html">Site-Plan</a></li>
-                </ul>
+                <a href="homepage.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
             </nav>
-            <button class="btn">Button</button>
-        </div>
-    </header>
-    
-    <section class="hero">
-        <div class="image-placeholder">🖼</div>
-    </section>
-    
-    <section class="faq">
-        <div class="container">
-            <div class="faq-left">
-                <h2>FAQ</h2>
-                <p>So many great facts will go here.</p>
+            <div class="header-cta">
+                <a href="contact.html" class="cta-button">Get in Touch</a>
             </div>
-            <div class="faq-right">
-                <h3>Medium length question goes here</h3>
-                <p>what could i possibly say?????? isn't that the question?</p>
-                <h3>Medium length question goes here</h3>
-                <p>mwhahahahahahaha</p>
+        </header>
+        
+        <main>
+            <div class="tagline">
+                <p>Building digital solutions that make a difference</p>
             </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-left">Logo</div>
-            <nav>
-                <ul>
-                    <li><a href="site-plan.html">Site-Plan</a></li>
-                </ul>
-            </nav>
-            <div class="social-icons">
-                <span><img src="images/facebook.png" alt=""></span> <span><img src="images/instagram.png" alt="Instagram"></i></span> <span><img src="images/twitter.png" alt="X"></span>
+            
+            <div class="hero">
+                <img src="images/selfie.jpg" alt="Donovan's Portrait">
+                <section class="hero-msg">
+                    <h1>Donovan Ladle</h1>
+                    <h2>Software Developer</h2>
+                </section>
             </div>
-        </div>
-    </footer>
+            
+            <div class="about-section">
+                <section>
+                    <h2>About Me!</h2>
+                    <p>My intention is that this website will be mainly for employers. I want this website to be a site in which I can upload my projects, resume, and also allow visitors to get to know me better. I am thinking of possibly making a QR code that links to this website so that when I go to job fairs, companies would have a quick and easy way to view my resume.</p>
+                    <p>I am hoping that my website will help employers understand what skills and certifications I have. I hope to be able to assure any concerns they have by showcasing my projects. I also want them to know who I am as an individual and that I am a person who is easy to work with. My goal is for them to be excited to meet me in person by the time they are done reviewing my website.</p>
+                </section>
+                <img src="images/mountain.jpg" alt="Mountain Landscape">
+            </div>
+            
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>What skills do you specialize in?</h3>
+                    <p>I specialize in web development, with expertise in HTML, CSS, JavaScript, and responsive design. I'm also proficient in various programming languages and enjoy solving complex problems.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What kind of projects have you worked on?</h3>
+                    <p>I've worked on various web development projects including personal websites, e-commerce platforms, and security applications. You can find more details on my Projects page.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are your career goals?</h3>
+                    <p>I aim to continue growing as a developer while contributing to meaningful projects. I'm particularly interested in opportunities that allow me to combine my technical skills with creative problem-solving.</p>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <p>Interested in working together or learning more about my projects?</p>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="Don's Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="homepage.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="site-plan.html">Site Plan</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Donovan Ladle</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

@@ -3,194 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            line-height: 1.6;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 15px;
-        }
-        
-        /* Header styles - updated to match previous code */
-        header {
-            background: #fff;
-            padding: 15px 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        .nav-links li {
-            margin-left: 20px;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-        }
-        .button {
-            background: #333;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 4px;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-        }
-        
-        /* Resume page specific styles */
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            max-width: 70%;
-            margin: 40px auto;
-        }
-        .box {
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .bottom-boxes {
-            display: flex;
-            justify-content: space-between;
-            max-width: 70%;
-            margin: 30px auto;
-            gap: 20px;
-        }
-        .bottom-box {
-            flex: 1;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        /* Footer - updated to match previous code */
-        footer {
-            background: white;
-            padding: 30px 0;
-            border-top: 1px solid #e0e0e0;
-            margin-top: 40px;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .footer-links {
-            display: flex;
-            list-style: none;
-        }
-        .footer-links li {
-            margin-right: 20px;
-        }
-        .footer-links a {
-            text-decoration: none;
-            color: #333;
-        }
-        .social-icons {
-            display: flex;
-        }
-        .social-icons a {
-            margin-left: 15px;
-            color: #333;
-            text-decoration: none;
-        }
-        .copyright {
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-        }
-    </style>
+    <title>Donovan's Resume</title>
+    <link rel="stylesheet" href="styles/resume.css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">Logo</div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="homepage.html">Homepage</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="site-plan.html">Site-Plan</a></li>
-                    </ul>
-                </nav>
-                <button class="button">Button</button>
+    <div id="content">
+        <header>
+            <div class="logo-box">
+                <img src="images/logo.jpg" alt="Don's Logo">
             </div>
-        </div>
-    </header>
-    
-    <div class="main-content">
-        <div class="box">
-            <h2>RESUME</h2>
-            <p>Insert your resume details here.</p>
-        </div>
-        <div class="box">
-            <h2>EXPERIENCE</h2>
-            <p>Describe your work experience here.</p>
-        </div>
-    </div>
-    
-    <div class="bottom-boxes">
-        <div class="bottom-box">
-            <h2>CERTIFICATIONS</h2>
-            <p>List your certifications here.</p>
-        </div>
-        <div class="bottom-box">
-            <h2>SKILLS</h2>
-            <p>Highlight your skills here.</p>
-        </div>
-    </div>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="logo">Logo</div>
-                <ul class="footer-links">
-                    <li><a href="homepage.html">Homepage</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="site-plan.html">Site-Plan</a></li>
-                </ul>
-                <div class="social-icons">
-                    <a href="images/instagram.png" aria-label="Instagram"><img src="images/instagram.png" alt=""></a>
-                    <a href="images/facebook.png" aria-label="Facebook"><img src="images/facebook.png" alt=""></a>
-                    <a href="images/twitter.png" aria-label="Twitter"><img src="images/twitter.png" alt=""></a>
+            <nav>
+                <a href="homepage.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-cta">
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+            </div>
+        </header>
+        
+        <main>
+            <h1>RESUME</h1>
+            
+            <div class="main-box">
+                <h2>EXPERIENCE</h2>
+                <div class="experience-content">
+                    <div class="job">
+                        <h3>Web Development Intern</h3>
+                        <p><strong>Tech Solutions Inc.</strong> | Summer 2024</p>
+                        <ul>
+                            <li>Assisted in the development of responsive web applications</li>
+                            <li>Collaborated with senior developers on client projects</li>
+                            <li>Implemented design changes based on client feedback</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>Freelance Web Developer</h3>
+                        <p><strong>Self-Employed</strong> | 2023 - Present</p>
+                        <ul>
+                            <li>Created custom websites for small businesses</li>
+                            <li>Implemented SEO strategies to improve client visibility</li>
+                            <li>Provided ongoing maintenance and support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="education">
+                        <h3>Education</h3>
+                        <p><strong>Bachelor of Science in Computer Science</strong></p>
+                        <p>Brigham Young University, Expected Graduation: 2026</p>
+                    </div>
                 </div>
             </div>
-            <div class="copyright">
-                © 2024 Your Website. All rights reserved. | Privacy Policy | Terms of Service
+            
+            <div class="bottom-section">
+                <div class="certifications-box">
+                    <h2>CERTIFICATIONS</h2>
+                    <ul>
+                        <li>Front-End Web Developer Certification, 2024</li>
+                        <li>Responsive Web Design Certification, FreeCodeCamp, 2023</li>
+                        <li>Python Programming Fundamentals, 2023</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-box">
+                    <h2>SKILLS</h2>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Web Design</li>
+                        <li>Python</li>
+                        <li>Git/GitHub</li>
+                        <li>Problem Solving</li>
+                        <li>Team Collaboration</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
+        </main>
+        
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="Don's Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="homepage.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="site-plan.html">Site Plan</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Donovan Ladle</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

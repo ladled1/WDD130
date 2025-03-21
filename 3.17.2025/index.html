@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Paragraph Alignment</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+            font-family: serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Basic section styling */
+        section {
+            background-color: #a8d3e6;
+            width: 50%;
+            height: 120px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        /* Block positioning */
+        /* Block 1 - Right aligned */
+        #block1 {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        /* Block 2 - Center aligned */
+        #block2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Block 3 - Left aligned */
+        #block3 {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        /* Block 4 - Center aligned */
+        #block4 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Block 5 - Right aligned */
+        #block5 {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        /* Remove default margins from paragraphs */
+        p {
+            margin: 0;
+        }
+
+        /* Evenly spaced text positioning for block 1 */
+        #one {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        #two {
+            position: absolute;
+            right: 200px;
+            top: 60px;
+        }
+
+        #three {
+            position: absolute;
+            left: 80px;
+            bottom: 20px;
+        }
+
+        /* Evenly spaced text positioning for block 2 */
+        #four {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+
+        #five {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60px;
+        }
+
+        #six {
+            position: absolute;
+            left: 80px;
+            bottom: 20px;
+        }
+
+        /* Special layout for block 3 as requested */
+        #seven {
+            position: absolute;
+            right: 80px;
+            top: 20px;
+        }
+
+        #eight {
+            position: absolute;
+            left: 80px;
+            top: 60px;
+        }
+
+        #nine {
+            position: absolute;
+            right: 80px;
+            bottom: 20px;
+        }
+
+        /* Evenly spaced text positioning for block 4 */
+        #ten {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+        }
+
+        #eleven {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60px;
+        }
+
+        #twelve {
+            position: absolute;
+            right: 40px;
+            bottom: 20px;
+        }
+
+        /* Evenly spaced text positioning for block 5 */
+        #thirteen {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+        }
+
+        #fourteen {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60px;
+        }
+
+        #fifteen {
+            position: absolute;
+            right: 40px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Block 1 - Right aligned -->
+        <section id="block1">
+            <p id="one">One</p>
+            <p id="two">Two</p>
+            <p id="three">Three</p>
+        </section>
+
+        <!-- Block 2 - Center aligned -->
+        <section id="block2">
+            <p id="four">Four</p>
+            <p id="five">Five</p>
+            <p id="six">Six</p>
+        </section>
+
+        <!-- Block 3 - Left aligned -->
+        <section id="block3">
+            <p id="seven">Seven</p>
+            <p id="eight">Eight</p>
+            <p id="nine">Nine</p>
+        </section>
+
+        <!-- Block 4 - Center aligned -->
+        <section id="block4">
+            <p id="ten">Ten</p>
+            <p id="eleven">Eleven</p>
+            <p id="twelve">Twelve</p>
+        </section>
+
+        <!-- Block 5 - Right aligned -->
+        <section id="block5">
+            <p id="thirteen">Thirteen</p>
+            <p id="fourteen">Fourteen</p>
+            <p id="fifteen">Fifteen</p>
+        </section>
+    </div>
+</body>
+</html>
