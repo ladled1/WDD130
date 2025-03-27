@@ -29,6 +29,7 @@ body {
   background-color: var(--accent2-color);
 }
 
+
 #content {
   max-width: 1200px;
   margin: 0 auto;
@@ -67,7 +68,7 @@ img {
   background-color: var(--accent1-color);
 }
 
-/* Header Styles - Unchanged */
+/* Header Styles */
 header {
   background-color: var(--secondary-color);
   padding: 20px;
@@ -99,7 +100,7 @@ nav a:hover {
 /* Hero Banner */
 .hero-banner {
   background-color: #e0e0e0;
-  background-image: url('/personal-website-pt2/images/mountain.jpg');
+  background-image: url('/images/mountain.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -193,7 +194,7 @@ nav a:hover {
   font-size: 1.2em;
 }
 
-/* Footer Styles - Unchanged */
+/* Footer Styles */
 footer {
   background-color: var(--primary-color);
   color: white;
