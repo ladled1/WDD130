@@ -1,4 +1,3 @@
-/* Inherit most styles from homepagestyle.css */
 .contact-main {
     background-color: var(--accent2-color);
     padding: 40px 20px;
@@ -47,7 +46,6 @@
     min-height: 150px;
 }
 
-/* Override submit button to match homepage style */
 input[type=submit].cta-button {
     width: 100%;
     margin-top: 20px;
@@ -65,7 +63,6 @@ input[type=submit].cta-button:hover {
     background-color: var(--accent1-color);
 }
 
-/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .contact-container {
         width: 100%;

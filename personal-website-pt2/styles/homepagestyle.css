@@ -1,28 +1,22 @@
-/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
-/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Root variables */
 :root {
-  /* Color Palette */
   --primary-color: #1b3a2b;
   --secondary-color: #a7c4a0;
   --accent1-color: #5f9ea0;
   --accent2-color: #ede7d9;
   --text-color: #2e2e2e;
   
-  /* Fonts */
   --heading-font: "IM Fell French Canon SC", sans-serif;
   --paragraph-font: "Lato", Helvetica, sans-serif;
 }
 
-/* General Styles */
 body {
   font-family: var(--paragraph-font);
   color: var(--text-color);
@@ -54,7 +48,6 @@ img {
   max-width: 100%;
 }
 
-/* Button style */
 .cta-button {
   display: inline-block;
   background-color: var(--primary-color);
@@ -68,7 +61,6 @@ img {
   background-color: var(--accent1-color);
 }
 
-/* Header Styles */
 header {
   background-color: var(--secondary-color);
   padding: 20px;
@@ -97,7 +89,6 @@ nav a:hover {
   color: white;
 }
 
-/* Hero Banner */
 .hero-banner {
   background-color: #e0e0e0;
   background-image: url('/images/mountain.jpg');
@@ -152,7 +143,6 @@ nav a:hover {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-/* FAQ Section */
 .faq-section {
   background-color: white;
   padding: 20px;
@@ -180,7 +170,6 @@ nav a:hover {
   color: var(--primary-color);
 }
 
-/* Call to Action */
 .cta {
   background-color: var(--secondary-color);
   padding: 30px;
@@ -194,7 +183,6 @@ nav a:hover {
   font-size: 1.2em;
 }
 
-/* Footer Styles */
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -248,7 +236,6 @@ footer {
   color: var(--accent2-color);
 }
 
-/* Simple Mobile Responsive */
 @media screen and (max-width: 768px) {
   header, .footer-top, .footer-bottom {
     flex-direction: column;

@@ -1,4 +1,3 @@
-/* Basic CSS Reset & Variables */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@
     --body-font: "Lato", Helvetica, sans-serif;
 }
 
-/* General Styles */
 body {
     font-family: var(--body-font);
     color: var(--text);
@@ -34,7 +32,6 @@ h1, h2 {
     color: var(--primary);
 }
 
-/* Header */
 header {
     background-color: var(--secondary);
     padding: 20px;
@@ -76,7 +73,6 @@ nav a:hover {
     background-color: var(--accent1);
 }
 
-/* Profile Section */
 .profile-section {
     display: flex;
     flex-direction: column;
@@ -115,7 +111,6 @@ nav a:hover {
     font-weight: 500;
 }
 
-/* Main Content */
 main {
     background-color: white;
     padding: 20px;
@@ -150,7 +145,6 @@ li {
     margin-bottom: 5px;
 }
 
-/* Bottom Sections */
 .bottom-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -158,7 +152,6 @@ li {
     margin-bottom: 30px;
 }
 
-/* Footer */
 footer {
     background-color: var(--primary);
     color: white;
@@ -204,7 +197,6 @@ footer {
     gap: 20px;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     header, .footer-top, .footer-bottom {
         flex-direction: column;
