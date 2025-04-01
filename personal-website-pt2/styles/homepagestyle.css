@@ -91,7 +91,7 @@ nav a:hover {
 
 .hero-banner {
   background-color: #e0e0e0;
-  background-image: url('images/mountain.jpg');
+  background-image: url('/images/mountain.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
